@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería GetInstant</title>
+    <!-- Importar la fuente Aclonica desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <!-- Enlace a tu archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Título de la Panadería -->
+            <div class="titulo">
+                <h5>Panadería <span><br>GetInstant</span></h5>
+            </div>
+
+            <!-- Contenedor de contactos y visitanos -->
+            <div class="contactos-visitanos">
+                <p>📞 Contáctanos: &nbsp &nbsp | &nbsp &nbsp 📍 Visítanos: </p> <br>
+                <p> &nbsp &nbsp &nbsp 55-xxxx-xxxx. &nbsp &nbsp | &nbsp &nbsp &nbsp &nbsp &nbsp Calle xxxxxxxxx </p>
+            </div>
+        </div>
+
+        <!-- Barra de Navegación -->
+        <nav>
+            <ul class="nav-lista">
+                <li><a href="header.html" class="nav-link">Inicio</a></li>
+                <li><a href="infNosotros.html" class="nav-link">Acerca de nosotros</a></li>
+                <li><a href="productos.html" class="nav-link">Productos</a></li>
+                <li><a href="promociones.html" class="nav-link">Promociones</a></li>
+                <li><a href="cupones.html" class="nav-link">Cupones</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <!-- Buscador -->
+            <div class="buscador">
+                <input type="text" placeholder="Buscar productos...">
+                <button>🔍</button>
+            </div>
+
+            <!-- Carrito -->
+            <div class="carrito">
+                <a href="carrito.html">🛒 (1)</a>
+            </div>
+        </nav>
+    </header>
+    <script>
+        // JavaScript para añadir la clase 'active' según la URL
+        window.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-lista li a');
+            const currentPath = window.location.pathname.split('/').pop();  // Captura solo el nombre del archivo
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop(); // Captura el nombre del archivo del href
+                if (linkPath === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

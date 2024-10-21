@@ -1,0 +1,253 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cfac89; /* Color de fondo beige */
+}
+
+h1 {
+    font-size: 32px;
+    color: #42332e;
+    margin-bottom: 10px;
+    font-family: 'Aclonica', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #42332e;
+    margin-bottom: 20px;
+    font-family: 'Aclonica', sans-serif;
+    text-align: center;
+}
+
+.login-container, .registro-container {
+    background-color: #c47647;
+    width: 400px;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #42332e;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 96%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #42332e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8a5a44;
+}
+
+p {
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+}
+
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Encabezado */
+header {
+    background-color: #cfac89;
+    padding: 10px 20px;
+    color: #42332e;
+}
+
+/* Contenedor del encabezado */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo del título */
+.titulo h5 {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Aclonica', sans-serif; /* Usar la fuente Aclonica */
+    text-align: right;
+}
+
+.titulo span {
+    font-size: 30px;
+    color: #42332e;
+    font-family: 'Aclonica', sans-serif; /* Usar la fuente Aclonica */
+}
+
+/* Contactos y Visítanos sin espacios extra */
+.contactos-visitanos p {
+    margin: 0;
+    font-size: 18px;
+    color: #42332e;
+    font-family: 'Aclonica', sans-serif; /* Usar la fuente Aclonica */
+    text-align: right;
+    display: inline-block;
+}
+
+/* Barra de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #c47647; /* Color de fondo marrón */
+    padding: 10px 20px;
+    color: #42332e;
+}
+
+/* Lista de navegación */
+.nav-lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-lista li {
+    margin-right: 15px;
+}
+
+/* Estilo de los enlaces de la barra de navegación */
+.nav-lista li a {
+    color: #42332e;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Aclonica', sans-serif;
+    padding: 10px;
+    background-color: #c47647; 
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo del buscador */
+.buscador {
+    display: flex;
+}
+
+.buscador input[type="text"] {
+    width: 200px; /* Agrandar el campo de texto */
+    padding: 3px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+}
+
+.buscador button {
+    padding: 5px;
+    font-size: 14px;
+    background-color: #f4a460; /* Marrón claro */
+    cursor: pointer;
+}
+
+/* Estilo del carrito */
+.carrito a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sección de imagen a la izquierda */
+.image-container {
+    flex: 1;
+    padding: 10px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sección de información (texto) al centro y derecha */
+.info-container {
+    flex: 2;
+    padding: 10px;
+}
+
+.info-container h2 {
+    color: #5D4037;
+}
+
+.info-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.info-container p, .info-container li {
+    color: #333;
+    line-height: 1.5;
+}
+
+.testimonios p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.nav-lista li a:hover {
+    background-color: #A0522D; /* Color cuando pasas el cursor (más oscuro) */
+}
+
+.nav-lista li a.active{
+    background-color: #8B4513; 
+    color: white;
+    border-radius: 5px;
+}
+
+.redes-sociales-cuerpo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.redes-sociales-cuerpo h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.icono-social {
+    margin: 0 15px;
+}
+
+.icono-social img {
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería GetInstant - Información</title>
+    <!-- Importar la fuente Aclonica desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- Título de la Panadería -->
+            <div class="titulo">
+                <h5>Panadería <span><br>GetInstant</span></h5>
+            </div>
+
+            <!-- Contenedor de contactos y visítanos -->
+            <div class="contactos-visitanos">
+                <p>📞 Contáctanos: &nbsp &nbsp | &nbsp &nbsp 📍 Visítanos: </p> <br>
+                <p> &nbsp &nbsp &nbsp 55-xxxx-xxxx. &nbsp &nbsp | &nbsp &nbsp &nbsp &nbsp &nbsp Calle xxxxxxxxx </p>
+            </div>
+        </div>
+
+        <!-- Barra de Navegación -->
+        <nav>
+            <ul class="nav-lista">
+                <li><a href="header.html" class="nav-link">Inicio</a></li>
+                <li><a href="infNosotros.html" class="nav-link">Acerca de nosotros</a></li>
+                <li><a href="productos.html" class="nav-link">Productos</a></li>
+                <li><a href="promociones.html" class="nav-link">Promociones</a></li>
+                <li><a href="cupones.html" class="nav-link">Cupones</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+
+            <!-- Buscador -->
+            <div class="buscador">
+                <input type="text" placeholder="Buscar productos...">
+                <button>🔍</button>
+            </div>
+
+            <!-- Carrito -->
+            <div class="carrito">
+                <a href="carrito.html">🛒 (1)</a>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        // JavaScript para añadir la clase 'active' según la URL
+        window.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-lista li a');
+            const currentPath = window.location.pathname.split('/').pop();  // Captura solo el nombre del archivo
+
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute('href').split('/').pop(); // Captura el nombre del archivo del href
+                if (linkPath === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <main>
+        <div class="main-container">
+            <!-- Sección de la imagen a la izquierda -->
+            <div class="image-container">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDw4QDRAQDg8NDw0QEA4RDQ8PDQ0QFREWGBcRFRMYHSggGBolGxUfITEhJSkrLi4uGB81ODMtNyguLisBCgoKDg0NDw8PEisZFRktKysrKy03LS0tNzc3NystLSsrKywrKy0rKysrKy0rKysrKy0rKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEBAQADAQEAAAAAAAAAAAAAA...">
+            </div>
+
+            <!-- Sección de la información (texto) -->
+            <div class="info-container">
+                <section class="intro">
+                    <h2>Bienvenidos a la Panadería GetInstant</h2>
+                    <p>Sabores tradicionales, con amor y dedicación. Desde 1927, en Panadería GetInstant nos hemos dedicado a ofrecer a nuestros clientes delicias hechas con los mejores ingredientes. Cada día, nuestro equipo pone pasión en cada detalle para brindarte el sabor perfecto en cada producto.</p>
+                </section>
+
+                <section class="info">
+                    <h2>¿Por qué elegirnos?</h2>
+                    <ul>
+                        <li><strong>Calidad artesanal:</strong> Cada uno de nuestros productos es elaborado con los mejores ingredientes.</li>
+                        <li><strong>Frescura garantizada:</strong> Todos nuestros productos se hornean el mismo día.</li>
+                        <li><strong>Variedad para todos:</strong> Ofrecemos una amplia selección que incluye panes, pasteles, galletas, y más.</li>
+                    </ul>
+                </section>
+
+                <section class="visitanos">
+                    <h2>Visítanos o Haz tu Pedido en Línea</h2>
+                    <p>No hay nada como el aroma de un pan recién horneado. Ven a visitarnos en dirección Calle xxxxxxxxx, o realiza tu pedido en línea y nuestras delicias se enviarán hasta tu casa.</p>
+                    <p><strong>Dirección:</strong> Calle xxxxxxxx, México</p>
+                    <p><strong>Teléfono:</strong> 55-xxxx-xxxx</p>
+                    <p><strong>Horario:</strong> Lunes a Sábado de 8:00am a 6:00pm</p>
+                    <p><strong>Pedido en línea:</strong> <a href="#">www.getinstant.com/pedidos</a></p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
